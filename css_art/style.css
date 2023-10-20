@@ -1,0 +1,116 @@
+:root {
+    --laptop-width: 200px;
+    --laptop-height: 200px;
+    --panel-color: #ABABA9;
+    --screen-color: linear-gradient(90deg, #EBF4F6 0%, #A3B9F5 100%);
+    --key-color: linear-gradient(180deg, #717173 0%, #F0EDDC 100%);
+    --space-bar-color: #808380;
+    --thickness-color: #000000;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 85px;
+}
+
+.laptop {
+    position: relative;
+    width: var(--laptop-width);
+    height: var(--laptop-height);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-lid, .bottom-panel, .space-bar, .bottom-panel-side, .bottom-panel-bottom {
+    background-color: var(--panel-color);
+}
+
+.screen {
+    position: absolute;
+    top: 6.25%;
+    left: 3.125%;
+    width: 93.75%;
+    height: 87.5%;
+    background: var(--screen-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-laptop {
+    position: relative;
+    width: 60px; /* Уменьшаем размеры для мини-ноутбука */
+    height: 60px;
+    background-color: transparent; /* Делаем фон прозрачным */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-lid {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    width: 80%;
+    height: 40%;
+}
+
+.bottom-panel {
+    position: absolute;
+    top: 45.5%;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    clip-path: polygon(11% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.space-bar {
+    position: absolute;
+    bottom: 12.5%;
+    left: 5%;
+    width: 83%;
+    height: 12.5%;
+    background: var(--space-bar-color);
+    clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.keys {
+    position: absolute;
+    top: 12%;
+    left: 9%;
+    display: flex;
+    gap: 15%;
+    width: 85%;
+    height: 50%;
+}
+
+.keys div {
+    width: 35%;
+    height: 100%;
+    background: var(--key-color);
+    clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
+}
+
+.bottom-panel-side {
+    position: absolute;
+    top: 45.5%;
+    left: 83%;
+    width: 15%;
+    height: 44.5%;
+    background: var(--thickness-color);
+    clip-path: polygon(80% 0%, 100% 5%, 25% 100%, 0% 100%);
+}
+
+.bottom-panel-bottom {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 80%;
+    height: 5%;
+    background: var(--thickness-color);
+}

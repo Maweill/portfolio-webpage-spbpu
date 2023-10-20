@@ -1,0 +1,25 @@
+.center-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.formula-result-hidden {
+    display: none;
+}
+
+.formula-result-visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img,
+p {
+    display: inline-block;
+    border: none;
+}
+
+.smile-img {
+    width: 100px;
+    height: auto;
+}

@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    background-color: #f3f3f3;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    border: 4px solid black;
+    width: 100%;
+    margin: auto;
+    padding: 10px 7px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border: 4px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.logo-head {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-radius: 50%; /* Делает круглым */
+}
+
+.logo-body {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 5px 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.large {
+    height: 10px;
+}
+
+.large, .medium {
+    background-color: black;
+    border: 0;
+}
+
+.medium {
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.submit-menu {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px #adadad;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-menu:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.submit-menu a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit;  /* Задает цвет текста, наследованный от родительского элемента */
+}
+
+.submit-menu:hover a {
+    color: black; /* Задает цвет текста для ссылки при наведении на .submit-menu */
+}
+
+.about {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+img {
+    width: 260px;
+    padding: 10px;
+    border: 4px solid black;
+}
+
+.about-me {
+    border: 4px solid black;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmax;
+}
+
+.small-text {
+    font-size: 1.5rem;
+}
+
+.work-menu {
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.work-block {
+    color: black;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 5px 5px #adadad;
+    border: 10px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden; /* Добавлено для корректного отображения border-radius в случае, если дочерний элемент выходит за его границы */
+}
+
+.work-block:hover {
+    background-color: black;
+    color: white;
+}
+
+.work-block a {
+    display: flex; /* Перенесено из .work-block */
+    justify-content: center; /* Перенесено из .work-block */
+    align-items: center; /* Перенесено из .work-block */
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.work-block:hover a {
+    color: white;
+}
+
+.work-block p {
+    font-size: 2vmax;
+}
+
+.text-works {
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.15px;
+    font-size: 1.5em;
+}
+
+footer {
+    margin-top: 2px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    letter-spacing: 0.1px
+}
+
+.submit-menu a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none; /* Убирает подчеркивание */
+    color: white; /* Задает цвет текста */
+}
+
+.submit-menu a:hover {
+    text-decoration: none; /* Убирает подчеркивание даже при наведении */
+}

@@ -1,8 +1,12 @@
+:root {
+    --brand-size: 200px;
+}
+
 /* Стилизация основного контейнера бренда */
 .brand-box {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: var(--brand-size);
+    height: var(--brand-size);
     border: 1px solid black;
     overflow: hidden;
     margin: 30px auto;
@@ -11,8 +15,8 @@
 /* Стилизация маленького красного круга (примитив) */
 .primitive {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: calc(var(--brand-size) * 0.05);  /* 5% от размера логотипа */
+    height: calc(var(--brand-size) * 0.05);
     background-color: red;
     border-radius: 50%;
     top: 50%;
@@ -30,6 +34,12 @@
     animation: shake 0.2s infinite;
 }
 
+#brandLetters {
+    width: var(--brand-size);
+    height: var(--brand-size);
+    viewBox: 0 0 calc(var(--brand-size) * 1) calc(var(--brand-size) * 1);
+}
+
 /* Изменение цвета букв бренда и отображение имени при активации контейнера бренда */
 .brand-box.active-name #brandLetters text {
     fill: rgb(0, 255, 208);
@@ -42,7 +52,7 @@
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 18px;
+    font-size: calc(var(--brand-size) * 0.09);
     font-weight: bold;
     font-family: 'Helvetica, Arial, sans-serif';
     z-index: 10;

@@ -1,14 +1,19 @@
-document.querySelector('.brand-box').addEventListener('mouseleave', function () {
-    this.classList.add('active');
+const brandBoxes = document.querySelectorAll('.brand-box');
 
-    const self = this;
+// Добавляем обработчики событий каждому из выбранных элементов
+brandBoxes.forEach(function(box) {
+    box.addEventListener('mouseleave', function() {
+        this.classList.add('active');
 
-    setTimeout(function () {
-        self.classList.remove('active');
-    }, 1000);
-});
+        const self = this;
 
-document.querySelector('.brand-box').addEventListener('click', function () {
-    this.classList.toggle('active-name');
-    this.classList.toggle('background-change');
+        setTimeout(function() {
+            self.classList.remove('active');
+        }, 1000);
+    });
+
+    box.addEventListener('click', function() {
+        this.classList.toggle('active-name');
+        this.classList.toggle('background-change');
+    });
 });

@@ -2,9 +2,13 @@
     --brand-size: 200px;
 }
 
-/* Стилизация основного контейнера бренда */
+.brand-container {
+    text-align: center;
+}
+
 .brand-box {
     position: relative;
+    display: inline-block;
     width: var(--brand-size);
     height: var(--brand-size);
     border: 1px solid black;

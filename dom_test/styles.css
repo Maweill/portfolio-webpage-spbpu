@@ -66,12 +66,34 @@
     box-shadow: none;
 }
 
-.correct {
+.correct,
+.correct-question {
     border: 3px solid green;
 }
 
-.incorrect {
+.incorrect,
+.incorrect-question {
     border: 3px solid red;
+}
+
+.correct-question::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('images/correct.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.incorrect-question::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('images/incorrect.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
 }
 
 .selectable:hover {

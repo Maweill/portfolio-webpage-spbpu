@@ -49,13 +49,6 @@ function createQuestionBlock() {
     return { questionBlock, answerBlock };
 }
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
 function displayQuestion() {
     if (questions.length === 0) {
         document.getElementById('result').classList.remove('hidden');
@@ -118,13 +111,20 @@ function displayQuestion() {
                     displayQuestion();
                     answerBlock.classList.add('hidden');
                     let questionElement = questionBlock.querySelector('.question');
-                    questionElement.classList.add(isCorrect ? 'correct' : 'incorrect');
+                    questionElement.classList.add(isCorrect ? 'correct-question' : 'incorrect-question');
                 }, { once: true });
-            }, 1000);
+            }, 2000);
         };
 
         answerBlock.appendChild(answerElement);
     });
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
 
 function displayResultChart(correct, total) {

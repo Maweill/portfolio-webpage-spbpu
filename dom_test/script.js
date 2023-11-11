@@ -42,8 +42,7 @@ function displayQuestion() {
     }
     qNum++;
     let { qBlock, aBlock } = createQBlock();
-    let randomIdx = Math.floor(Math.random() * quizData.length);
-    let currentQ = quizData.splice(randomIdx, 1)[0];
+    let currentQ = getRandomQuestion();
     let correctA = currentQ.a[currentQ.c];
     shuffle(currentQ.a);
     let newCorrectIdx = currentQ.a.findIndex(answer => answer === correctA);
@@ -88,10 +87,8 @@ function displayQuestion() {
 }
 
 function createQBlock() {
-    let qBlock = document.createElement('div');
-    qBlock.classList.add('question-block');
-    let aBlock = document.createElement('div');
-    aBlock.classList.add('answer-block');
+    let qBlock = createQuestionBlock();
+    let aBlock = createAnswerBlock();
     let quizContainer = document.getElementById('quiz-container');
     quizContainer.appendChild(qBlock);
     quizContainer.appendChild(aBlock);
@@ -107,6 +104,23 @@ function createQBlock() {
         }
     };
     return { qBlock, aBlock };
+}
+
+function getRandomQuestion() {
+    let randomIdx = Math.floor(Math.random() * quizData.length);
+    return quizData.splice(randomIdx, 1)[0];
+}
+
+function createQuestionBlock() {
+    let qBlock = document.createElement('div');
+    qBlock.classList.add('question-block');
+    return qBlock;
+}
+
+function createAnswerBlock() {
+    let aBlock = document.createElement('div');
+    aBlock.classList.add('answer-block');
+    return aBlock;
 }
 
 function shuffle(array) {

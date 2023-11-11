@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo inline">
+            <div class="logo-head"></div>
+            <div class="logo-body"></div>
+        </div>
+        <h1 class="bold">BEDNYAKOV NIKITA</h1>
+        <div class="divider"></div>
+        <p>welcome to my portfolio website</p>
+    </header>
+    
+    <div class="divider large"></div>
+    <div class="menu">
+        <div class="submit-menu">
+            <a href="../index.html">
+                <p class="small-text">HOME</p>
+            </a>
+        </div>
+        <div class="submit-menu">
+            <a href="../about_me.html">
+                <p class="small-text">ABOUT ME</p>
+            </a>
+        </div>
+        <div class="submit-menu">
+            <a href="../my_works.html">
+                <p class="small-text">MY WORKS</p>
+            </a>
+        </div>
+    </div>
+    <div id="content-container">
+        <div id="quiz-container">
+            <div id="result" class="hidden">Вопросы закончились</div>
+            <div id="result-container">
+                <canvas id="resultChart" class="hidden"></canvas>
+            </div>
+            <!-- вопросы с вариантами ответа -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>Completed as part of the course "Web Design and Prototyping"</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

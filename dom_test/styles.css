@@ -1,0 +1,105 @@
+#content-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    color: #ececf1;
+}
+
+#quiz-container {
+    flex: 0 0 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #343541;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#result {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #ececf1;
+}
+
+#result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.questionHeader {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.question {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #000000;
+}
+
+.answer {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.answer {
+    display: inline-block;
+}
+
+.answer:hover {
+    box-shadow: 0 0 0 2px #ddd;
+}
+
+.answer.disabled:hover {
+    box-shadow: none;
+}
+
+.correct {
+    border: 3px solid green;
+}
+
+.incorrect {
+    border: 3px solid red;
+}
+
+.selectable:hover {
+    cursor: pointer;
+}
+
+.correct-answer {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.slide-out {
+    animation: slideOut 2s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(110%);
+    }
+}

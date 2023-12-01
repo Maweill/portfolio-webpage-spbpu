@@ -10,7 +10,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     border: 2px solid black;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -101,7 +101,9 @@ p {
     background-color: black;
     color: white;
     width: 100%;
-    padding: 10px;
+    height: 35px;
+    padding: 0px;
+    padding-top: 5px;
     box-shadow: 5px 5px #adadad;
     border: 2px solid transparent;
     cursor: pointer;
@@ -156,7 +158,7 @@ img {
 }
 
 .small-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .work-menu {

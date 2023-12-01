@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="words_styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <title>Лабораторная работа №6 Беднякова Никиты</title>
+</head>
+<body>
+  <header>
+    <div class="logo inline">
+      <div class="logo-head"></div>
+      <div class="logo-body"></div>
+    </div>
+    <h1 class="bold">BEDNYAKOV NIKITA</h1>
+    <div class="divider"></div>
+    <p>welcome to my portfolio website</p>
+  </header>
+
+  <div class="divider large"></div>
+  <div class="menu">
+    <div class="submit-menu">
+      <a href="../index.html"><p class="small-text">HOME</p></a>
+    </div>
+    <div class="submit-menu">
+      <a href="../about_me.html"><p class="small-text">ABOUT ME</p></a>
+    </div>
+    <div class="submit-menu">
+      <a href="../my_works.html"><p class="small-text">MY WORKS</p></a>
+    </div>
+  </div>
+  <main>
+    <div class="container">
+      <section id="disassembled-words-header">
+        <div class="word">
+          <p>a1 слово1</p>
+        </div>
+        <div class="word">
+          <p>a2 слово2p>
+        </div>
+      </section>
+      <div class="flex-container">
+        <section class="drag-and-drop-field">
+
+        </section>
+        <section class="input-menu">
+          <div class="entering-words">
+            <input type="text" id="input-words" placeholder="слово - слово - слово">
+            <button id="select-words">Разобрать</button>
+          </div>
+          <input class="selected-words" readonly>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="words.js"></script>
+</body>
+</html>

@@ -49,7 +49,7 @@ dragAndDropField.addEventListener('drop', function(event) {
         draggableElement = draggableElement.cloneNode(true);
         appendWordElementToDragAndDropField(draggableElement, data);
 
-        const wordText = draggableElement.textContent.split(' ')[1]; // Извлекаем текст слова
+        const wordText = draggableElement.textContent.split(' ')[1];
         addToSelectedWords(wordText);
     }
 

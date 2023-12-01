@@ -67,7 +67,7 @@
     height: 40px;
     border: 2px red solid;
     border-radius: 5px;
-    overflow-y: hidden; /* Убираем полосу прокрутки */
+    overflow-y: hidden;
     resize: none;
     padding: 5px;
 }

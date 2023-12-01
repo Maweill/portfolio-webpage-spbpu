@@ -9,52 +9,43 @@
   <title>Лабораторная работа №6 Беднякова Никиты</title>
 </head>
 <body>
-  <header>
-    <div class="logo inline">
-      <div class="logo-head"></div>
-      <div class="logo-body"></div>
-    </div>
-    <h1 class="bold">BEDNYAKOV NIKITA</h1>
-    <div class="divider"></div>
-    <p>welcome to my portfolio website</p>
-  </header>
+<header>
+  <div class="logo inline">
+    <div class="logo-head"></div>
+    <div class="logo-body"></div>
+  </div>
+  <h1 class="bold">BEDNYAKOV NIKITA</h1>
+  <div class="divider"></div>
+  <p>welcome to my portfolio website</p>
+</header>
 
-  <div class="divider large"></div>
-  <div class="menu">
-    <div class="submit-menu">
-      <a href="../index.html"><p class="small-text">HOME</p></a>
-    </div>
-    <div class="submit-menu">
-      <a href="../about_me.html"><p class="small-text">ABOUT ME</p></a>
-    </div>
-    <div class="submit-menu">
-      <a href="../my_works.html"><p class="small-text">MY WORKS</p></a>
+<div class="divider large"></div>
+<div class="menu">
+  <div class="submit-menu">
+    <a href="../index.html"><p class="small-text">HOME</p></a>
+  </div>
+  <div class="submit-menu">
+    <a href="../about_me.html"><p class="small-text">ABOUT ME</p></a>
+  </div>
+  <div class="submit-menu">
+    <a href="../my_works.html"><p class="small-text">MY WORKS</p></a>
+  </div>
+</div>
+<main>
+  <div class="container">
+    <section id="disassembled-words-header"></section>
+    <div class="flex-container">
+      <section id="drag-and-drop-field"></section>
+      <section class="input-menu">
+        <div class="entering-words">
+          <input type="text" id="input-words" placeholder="слово - слово - слово">
+          <button id="select-words">Разобрать</button>
+        </div>
+        <textarea id="selected-words" readonly></textarea>
+      </section>
     </div>
   </div>
-  <main>
-    <div class="container">
-      <section id="disassembled-words-header">
-        <div class="word">
-          <p>a1 слово1</p>
-        </div>
-        <div class="word">
-          <p>a2 слово2p>
-        </div>
-      </section>
-      <div class="flex-container">
-        <section class="drag-and-drop-field">
-
-        </section>
-        <section class="input-menu">
-          <div class="entering-words">
-            <input type="text" id="input-words" placeholder="слово - слово - слово">
-            <button id="select-words">Разобрать</button>
-          </div>
-          <input class="selected-words" readonly>
-        </section>
-      </div>
-    </div>
-  </main>
-  <script src="words.js"></script>
+</main>
+<script src="words.js"></script>
 </body>
 </html>
